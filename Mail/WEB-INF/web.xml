@@ -1,0 +1,696 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!DOCTYPE web-app
+    PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+    "http://java.sun.com/dtd/web-app_2_3.dtd">
+
+<web-app>
+
+    <!-- Define servlets that are included in the example application -->
+
+    <servlet>
+        <servlet-name>Auth</servlet-name>
+        <servlet-class>Auth</servlet-class>
+    </servlet>
+
+      <servlet>
+        <servlet-name>Auth1</servlet-name>
+        <servlet-class>Auth1</servlet-class>
+    </servlet>
+    
+    <servlet>
+        <servlet-name>inbox</servlet-name>
+        <servlet-class>inbox</servlet-class>
+    </servlet>
+
+   <servlet>
+        <servlet-name>inbox1</servlet-name>
+        <servlet-class>inbox1</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>outbox</servlet-name>
+        <servlet-class>outbox</servlet-class>
+    </servlet>
+
+     <servlet>
+        <servlet-name>outbox1</servlet-name>
+        <servlet-class>outbox1</servlet-class>
+    </servlet>
+
+       <servlet>
+        <servlet-name>outbox_select</servlet-name>
+        <servlet-class>outbox_select</servlet-class>
+    </servlet>
+
+       <servlet>
+        <servlet-name>outbox_delete</servlet-name>
+        <servlet-class>outbox_delete</servlet-class>
+    </servlet>
+
+       <servlet>
+        <servlet-name>outbox_deleteall</servlet-name>
+        <servlet-class>outbox_deleteall</servlet-class>
+    </servlet>
+
+      <servlet>
+        <servlet-name>outbox_send</servlet-name>
+        <servlet-class>outbox_send</servlet-class>
+    </servlet>
+
+      <servlet>
+        <servlet-name>outbox_sendall</servlet-name>
+        <servlet-class>outbox_sendall</servlet-class>
+    </servlet>
+
+       <servlet>
+        <servlet-name>outbox_content</servlet-name>
+        <servlet-class>outbox_content</servlet-class>
+    </servlet>
+
+     <servlet>
+        <servlet-name>sent</servlet-name>
+        <servlet-class>sent</servlet-class>
+    </servlet>
+
+      <servlet>
+        <servlet-name>sent1</servlet-name>
+        <servlet-class>sent1</servlet-class>
+    </servlet>
+
+     <servlet>
+        <servlet-name>sent_select</servlet-name>
+        <servlet-class>sent_select</servlet-class>
+    </servlet>
+
+   <servlet>
+        <servlet-name>sent_content</servlet-name>
+        <servlet-class>sent_content</servlet-class>
+    </servlet>
+
+       <servlet>
+        <servlet-name>sent_delete</servlet-name>
+        <servlet-class>sent_delete</servlet-class>
+    </servlet>
+
+     <servlet>
+        <servlet-name>sent_deleteall</servlet-name>
+        <servlet-class>sent_deleteall</servlet-class>
+    </servlet>
+
+         <servlet>
+        <servlet-name>sent_forward</servlet-name>
+        <servlet-class>sent_forward</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>drafts</servlet-name>
+        <servlet-class>drafts</servlet-class>
+    </servlet>
+   
+      <servlet>
+        <servlet-name>drafts1</servlet-name>
+        <servlet-class>drafts1</servlet-class>
+    </servlet>
+
+       <servlet>
+        <servlet-name>drafts_content</servlet-name>
+        <servlet-class>drafts_content</servlet-class>
+    </servlet>
+
+        <servlet>
+        <servlet-name>drafts_select</servlet-name>
+        <servlet-class>drafts_select</servlet-class>
+    </servlet>
+
+       <servlet>
+        <servlet-name>drafts_delete</servlet-name>
+        <servlet-class>drafts_delete</servlet-class>
+    </servlet>
+
+       <servlet>
+        <servlet-name>drafts_deleteall</servlet-name>
+        <servlet-class>drafts_deleteall</servlet-class>
+    </servlet>
+
+     <servlet>
+        <servlet-name>drafts_edit</servlet-name>
+        <servlet-class>drafts_edit</servlet-class>
+    </servlet>
+
+        <servlet>
+        <servlet-name>drafts_forward</servlet-name>
+        <servlet-class>drafts_forward</servlet-class>
+    </servlet>
+
+         <servlet>
+        <servlet-name>drafts_send</servlet-name>
+        <servlet-class>drafts_send</servlet-class>
+    </servlet>
+
+     <servlet>
+        <servlet-name>deleted</servlet-name>
+        <servlet-class>deleted</servlet-class>
+    </servlet>
+
+      <servlet>
+        <servlet-name>deleted1</servlet-name>
+        <servlet-class>deleted1</servlet-class>
+    </servlet>
+	
+     <servlet>
+        <servlet-name>deleted_content</servlet-name>
+        <servlet-class>deleted_content</servlet-class>
+    </servlet>
+
+     <servlet>
+        <servlet-name>deleted_delete</servlet-name>
+        <servlet-class>deleted_delete</servlet-class>
+    </servlet>
+  
+     <servlet>
+        <servlet-name>deleted_restore</servlet-name>
+        <servlet-class>deleted_restore</servlet-class>
+    </servlet>
+	
+     <servlet>
+        <servlet-name>deleted_restoreall</servlet-name>
+        <servlet-class>deleted_restoreall</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>deleted_deleteall</servlet-name>
+        <servlet-class>deleted_deleteall</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>deleted_select</servlet-name>
+        <servlet-class>deleted_select</servlet-class>
+    </servlet>
+	
+    <servlet>
+        <servlet-name>compose</servlet-name>
+        <servlet-class>compose</servlet-class>
+    </servlet>
+	
+    <servlet>
+        <servlet-name>start</servlet-name>
+        <servlet-class>start</servlet-class>
+    </servlet>
+	
+   <servlet>
+        <servlet-name>start1</servlet-name>
+        <servlet-class>start1</servlet-class>
+    </servlet>
+	
+     <servlet>
+        <servlet-name>start2</servlet-name>
+        <servlet-class>start2</servlet-class>
+    </servlet>
+
+	 <servlet>
+        <servlet-name>start3</servlet-name>
+        <servlet-class>start3</servlet-class>
+    </servlet>
+
+      <servlet>
+        <servlet-name>start1i</servlet-name>
+        <servlet-class>start1i</servlet-class>
+    </servlet>
+
+      <servlet>
+        <servlet-name>start2i</servlet-name>
+        <servlet-class>start2i</servlet-class>
+    </servlet>
+
+      <servlet>
+        <servlet-name>start3i</servlet-name>
+        <servlet-class>start3i</servlet-class>
+    </servlet>
+
+      <servlet>
+        <servlet-name>start1d</servlet-name>
+        <servlet-class>start1d</servlet-class>
+    </servlet>
+
+      <servlet>
+        <servlet-name>start2d</servlet-name>
+        <servlet-class>start2d</servlet-class>
+    </servlet>
+
+      <servlet>
+        <servlet-name>start3d</servlet-name>
+        <servlet-class>start3d</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>compose_send</servlet-name>
+        <servlet-class>compose_send</servlet-class>
+    </servlet>
+
+      <servlet>
+        <servlet-name>inbox_send</servlet-name>
+        <servlet-class>inbox_send</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>tonull</servlet-name>
+        <servlet-class>tonull</servlet-class>
+    </servlet>
+
+      <servlet>
+        <servlet-name>tonulli</servlet-name>
+        <servlet-class>tonulli</servlet-class>
+    </servlet>
+
+       <servlet>
+        <servlet-name>tonulld</servlet-name>
+        <servlet-class>tonulld</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>subjectnull</servlet-name>
+        <servlet-class>subjectnull</servlet-class>
+    </servlet>
+
+      <servlet>
+        <servlet-name>subjectnulli</servlet-name>
+        <servlet-class>subjectnulli</servlet-class>
+    </servlet>
+
+      <servlet>
+        <servlet-name>subjectnulld</servlet-name>
+        <servlet-class>subjectnulld</servlet-class>
+    </servlet>
+
+
+    <servlet>
+        <servlet-name>messagenull</servlet-name>
+        <servlet-class>messagenull</servlet-class>
+    </servlet>
+
+       <servlet>
+        <servlet-name>messagenulli</servlet-name>
+        <servlet-class>messagenulli</servlet-class>
+    </servlet>
+
+        <servlet>
+        <servlet-name>messagenulld</servlet-name>
+        <servlet-class>messagenulld</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>savenull</servlet-name>
+        <servlet-class>savenull</servlet-class>
+    </servlet>
+
+      <servlet>
+        <servlet-name>savenulli</servlet-name>
+        <servlet-class>savenulli</servlet-class>
+    </servlet>
+      <servlet>
+        <servlet-name>savenulld</servlet-name>
+        <servlet-class>savenulld</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>logout</servlet-name>
+        <servlet-class>logout</servlet-class>
+    </servlet>
+
+     <servlet>
+        <servlet-name>inbox_select</servlet-name>
+        <servlet-class>inbox_select</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>inbox_content</servlet-name>
+        <servlet-class>inbox_content</servlet-class>
+    </servlet>
+
+      <servlet>
+        <servlet-name>inbox_delete</servlet-name>
+        <servlet-class>inbox_delete</servlet-class>
+    </servlet>
+
+       <servlet>
+        <servlet-name>inbox_forward</servlet-name>
+        <servlet-class>inbox_forward</servlet-class>
+    </servlet>
+
+        <servlet>
+        <servlet-name>inbox_reply</servlet-name>
+        <servlet-class>inbox_reply</servlet-class>
+    </servlet>
+
+      <servlet>
+        <servlet-name>inbox_deleteall</servlet-name>
+        <servlet-class>inbox_deleteall</servlet-class>
+    </servlet>
+	
+    <servlet-mapping>
+        <servlet-name>Auth</servlet-name>
+        <url-pattern>/servlet/Auth</url-pattern>
+    </servlet-mapping>
+
+     <servlet-mapping>
+        <servlet-name>Auth1</servlet-name>
+        <url-pattern>/servlet/Auth1</url-pattern>
+    </servlet-mapping>
+    
+    <servlet-mapping>
+        <servlet-name>inbox</servlet-name>
+        <url-pattern>/servlet/inbox</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>inbox1</servlet-name>
+        <url-pattern>/servlet/inbox1</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>inbox_select</servlet-name>
+        <url-pattern>/servlet/inbox_select</url-pattern>
+    </servlet-mapping> 
+
+     <servlet-mapping>
+        <servlet-name>inbox_reply</servlet-name>
+        <url-pattern>/servlet/inbox_reply</url-pattern>
+    </servlet-mapping> 
+
+    <servlet-mapping>
+        <servlet-name>inbox_forward</servlet-name>
+        <url-pattern>/servlet/inbox_forward</url-pattern>
+    </servlet-mapping> 
+
+    <servlet-mapping>
+        <servlet-name>inbox_content</servlet-name>
+        <url-pattern>/servlet/inbox_content</url-pattern>
+    </servlet-mapping> 
+
+    <servlet-mapping>
+        <servlet-name>inbox_delete</servlet-name>
+        <url-pattern>/servlet/inbox_delete</url-pattern>
+    </servlet-mapping> 
+
+     <servlet-mapping>
+        <servlet-name>inbox_deleteall</servlet-name>
+        <url-pattern>/servlet/inbox_deleteall</url-pattern>
+    </servlet-mapping> 
+
+   <servlet-mapping>
+        <servlet-name>outbox</servlet-name>
+        <url-pattern>/servlet/outbox</url-pattern>
+    </servlet-mapping>
+
+    
+   <servlet-mapping>
+        <servlet-name>outbox1</servlet-name>
+        <url-pattern>/servlet/outbox1</url-pattern>
+    </servlet-mapping>
+
+     <servlet-mapping>
+        <servlet-name>outbox_select</servlet-name>
+        <url-pattern>/servlet/outbox_select</url-pattern>
+    </servlet-mapping>
+
+     <servlet-mapping>
+        <servlet-name>outbox_delete</servlet-name>
+        <url-pattern>/servlet/outbox_delete</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet-mapping>
+        <servlet-name>outbox_deleteall</servlet-name>
+        <url-pattern>/servlet/outbox_deleteall</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>outbox_content</servlet-name>
+        <url-pattern>/servlet/outbox_content</url-pattern>
+    </servlet-mapping>
+
+      <servlet-mapping>
+        <servlet-name>outbox_send</servlet-name>
+        <url-pattern>/servlet/outbox_send</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>outbox_sendall</servlet-name>
+        <url-pattern>/servlet/outbox_sendall</url-pattern>
+    </servlet-mapping>
+
+	<servlet-mapping>
+        <servlet-name>sent</servlet-name>
+        <url-pattern>/servlet/sent</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>sent1</servlet-name>
+        <url-pattern>/servlet/sent1</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>sent_select</servlet-name>
+        <url-pattern>/servlet/sent_select</url-pattern>
+    </servlet-mapping>
+
+     <servlet-mapping>
+        <servlet-name>sent_content</servlet-name>
+        <url-pattern>/servlet/sent_content</url-pattern>
+    </servlet-mapping>
+
+     <servlet-mapping>
+        <servlet-name>sent_delete</servlet-name>
+        <url-pattern>/servlet/sent_delete</url-pattern>
+    </servlet-mapping>
+
+     <servlet-mapping>
+        <servlet-name>sent_deleteall</servlet-name>
+        <url-pattern>/servlet/sent_deleteall</url-pattern>
+    </servlet-mapping>
+
+     <servlet-mapping>
+        <servlet-name>sent_forward</servlet-name>
+        <url-pattern>/servlet/sent_forward</url-pattern>
+    </servlet-mapping>
+
+	<servlet-mapping>
+        <servlet-name>drafts</servlet-name>
+        <url-pattern>/servlet/drafts</url-pattern>
+    </servlet-mapping>
+
+     <servlet-mapping>
+        <servlet-name>drafts1</servlet-name>
+        <url-pattern>/servlet/drafts1</url-pattern>
+    </servlet-mapping>
+
+      <servlet-mapping>
+        <servlet-name>drafts_select</servlet-name>
+        <url-pattern>/servlet/drafts_select</url-pattern>
+    </servlet-mapping>
+
+
+      <servlet-mapping>
+        <servlet-name>drafts_content</servlet-name>
+        <url-pattern>/servlet/drafts_content</url-pattern>
+    </servlet-mapping>
+
+      <servlet-mapping>
+        <servlet-name>drafts_delete</servlet-name>
+        <url-pattern>/servlet/drafts_delete</url-pattern>
+    </servlet-mapping>
+
+       <servlet-mapping>
+        <servlet-name>drafts_edit</servlet-name>
+        <url-pattern>/servlet/drafts_edit</url-pattern>
+    </servlet-mapping>
+
+       <servlet-mapping>
+        <servlet-name>drafts_forward</servlet-name>
+        <url-pattern>/servlet/drafts_forward</url-pattern>
+    </servlet-mapping>
+
+       <servlet-mapping>
+        <servlet-name>drafts_deleteall</servlet-name>
+        <url-pattern>/servlet/drafts_deleteall</url-pattern>
+    </servlet-mapping>
+
+     <servlet-mapping>
+        <servlet-name>drafts_send</servlet-name>
+        <url-pattern>/servlet/drafts_send</url-pattern>
+    </servlet-mapping>
+
+	<servlet-mapping>
+        <servlet-name>deleted</servlet-name>
+        <url-pattern>/servlet/deleted</url-pattern>
+    </servlet-mapping>
+
+     <servlet-mapping>
+        <servlet-name>deleted1</servlet-name>
+        <url-pattern>/servlet/deleted1</url-pattern>
+    </servlet-mapping>
+
+     <servlet-mapping>
+        <servlet-name>deleted_content</servlet-name>
+        <url-pattern>/servlet/deleted_content</url-pattern>
+    </servlet-mapping>
+
+     <servlet-mapping>
+        <servlet-name>deleted_select</servlet-name>
+        <url-pattern>/servlet/deleted_select</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>deleted_restore</servlet-name>
+        <url-pattern>/servlet/deleted_restore</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>deleted_restoreall</servlet-name>
+        <url-pattern>/servlet/deleted_restoreall</url-pattern>
+    </servlet-mapping>
+
+   <servlet-mapping>
+        <servlet-name>deleted_delete</servlet-name>
+        <url-pattern>/servlet/deleted_delete</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>deleted_deleteall</servlet-name>
+        <url-pattern>/servlet/deleted_deleteall</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>compose</servlet-name>
+        <url-pattern>/servlet/compose</url-pattern>
+    </servlet-mapping>
+   
+    <servlet-mapping>
+        <servlet-name>start</servlet-name>
+        <url-pattern>/servlet/start</url-pattern>
+    </servlet-mapping>
+	
+    <servlet-mapping>
+        <servlet-name>start1</servlet-name>
+        <url-pattern>/servlet/start1</url-pattern>
+    </servlet-mapping>
+	
+    <servlet-mapping>
+        <servlet-name>start2</servlet-name>
+        <url-pattern>/servlet/start2</url-pattern>
+    </servlet-mapping>
+	
+    <servlet-mapping>
+        <servlet-name>start3</servlet-name>
+        <url-pattern>/servlet/start3</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>start1i</servlet-name>
+        <url-pattern>/servlet/start1i</url-pattern>
+    </servlet-mapping>
+
+     <servlet-mapping>
+        <servlet-name>start2i</servlet-name>
+        <url-pattern>/servlet/start2i</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet-mapping>
+        <servlet-name>start3i</servlet-name>
+        <url-pattern>/servlet/start3i</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>start1d</servlet-name>
+        <url-pattern>/servlet/start1d</url-pattern>
+    </servlet-mapping>
+
+     <servlet-mapping>
+        <servlet-name>start2d</servlet-name>
+        <url-pattern>/servlet/start2d</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet-mapping>
+        <servlet-name>start3d</servlet-name>
+        <url-pattern>/servlet/start3d</url-pattern>
+    </servlet-mapping>
+
+     <servlet-mapping>
+        <servlet-name>compose_send</servlet-name>
+        <url-pattern>/servlet/compose_send</url-pattern>
+    </servlet-mapping>
+
+      <servlet-mapping>
+        <servlet-name>inbox_send</servlet-name>
+        <url-pattern>/servlet/inbox_send</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>tonull</servlet-name>
+        <url-pattern>/servlet/tonull</url-pattern>
+    </servlet-mapping>
+    
+        <servlet-mapping>
+        <servlet-name>tonulli</servlet-name>
+        <url-pattern>/servlet/tonulli</url-pattern>
+    </servlet-mapping>
+	
+       <servlet-mapping>
+        <servlet-name>tonulld</servlet-name>
+        <url-pattern>/servlet/tonulld</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>subjectnull</servlet-name>
+        <url-pattern>/servlet/subjectnull</url-pattern>
+    </servlet-mapping>
+
+      <servlet-mapping>
+        <servlet-name>subjectnulli</servlet-name>
+        <url-pattern>/servlet/subjectnulli</url-pattern>
+    </servlet-mapping>
+
+     <servlet-mapping>
+        <servlet-name>subjectnulld</servlet-name>
+        <url-pattern>/servlet/subjectnulld</url-pattern>
+    </servlet-mapping>
+	
+    <servlet-mapping>
+        <servlet-name>messagenull</servlet-name>
+        <url-pattern>/servlet/messagenull</url-pattern>
+    </servlet-mapping>
+
+     <servlet-mapping>
+        <servlet-name>messagenulli</servlet-name>
+        <url-pattern>/servlet/messagenulli</url-pattern>
+    </servlet-mapping>
+
+     <servlet-mapping>
+        <servlet-name>messagenulld</servlet-name>
+        <url-pattern>/servlet/messagenulld</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>savenull</servlet-name>
+        <url-pattern>/servlet/savenull</url-pattern>
+    </servlet-mapping>
+
+     <servlet-mapping>
+        <servlet-name>savenulli</servlet-name>
+        <url-pattern>/servlet/savenulli</url-pattern>
+    </servlet-mapping>
+
+       <servlet-mapping>
+        <servlet-name>savenulld</servlet-name>
+        <url-pattern>/servlet/savenulld</url-pattern>
+    </servlet-mapping>
+	
+ 	<servlet-mapping>
+        <servlet-name>logout</servlet-name>
+        <url-pattern>/servlet/logout</url-pattern>
+    </servlet-mapping>
+
+</web-app>
