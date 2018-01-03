@@ -1,0 +1,22 @@
+1)req dispatcher should be used to transfer request
+
+2)naming should be properly done
+
+3)layout is diff
+
+4)no value tag for textarea
+
+
+
+start1-to show mail sent success
+
+tonull-to show recipient missing
+
+start2-to show mail sent to outbox
+
+start3-to show mail saved in drafts
+
+inbox1-next servlet from inbox on click of
+reply,forward,del,delall
+
+similarly outbox1 etc
